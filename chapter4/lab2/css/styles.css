@@ -18,7 +18,11 @@ body {
 
 
 header{height: 50vh;width: 100vw;}
-header h1{text-align: center;}
+header h1{
+    text-align: center;
+    font-size: 5rem;
+    line-height: 1.5;
+}
 header{
     background-image: url(../images/baby-hawk.jpg);
     background-size: contain;

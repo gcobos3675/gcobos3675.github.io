@@ -1,31 +1,21 @@
-/*  
+/* 
 Author: Giovanni Cobos
-Date: January 30, 2024
-File name: styles.css
+Date: February 25, 2024
+File Name: styles.css
 */
-    
+
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3 {
+
+body, header, nav, main, footer, img, h1, h3, ul {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
 /* Style rules for body and images */
+
 body {
     background-color: #f6eee4;
-}
-
-
-header{height: 50vh;width: 100vw;}
-header h1{
-    text-align: center;
-    font-size: 5rem;
-    line-height: 1.5;
-}
-header{
-    background-image: url(../images/baby-hawk.jpg);
-    background-size: contain;
 }
 
 img {
@@ -33,64 +23,69 @@ img {
     display: block;
 }
 
-/* Style rules for mobile viewport */
+/* style rules for mobile viewports */
 
 
 /* Style rules to show mobile class and hide tab-desk class */
+
 .mobile {
-    display:block;
+    display: block;
 }
 
-.tab-desk {
-    display:hide;
+.tab-desk{
+    display: none;
 }
 
-/*  Style rules for header area */
-header h1 {
+/* Style rules for header area */
+
+h1 {
     padding: 2%;
     text-align: center;
+    font-family: "Emblema One"
+      
 }
 
-header h3 {
+h3 {
     padding: 2%;
     text-align: center;
+    font-family: "Lora", serif;
 }
 
 /* Style rules for navigation area */
-nav{
+
+nav {
     background-color: #2a1f14;
 }
 
-nav ul{
-    list-style-type:none;
-    margin: 0;
+nav ul {
+    list-style-type: none;
     text-align: center;
 }
 
-nav li{
-    display: inline-block;
-    font-size: 5em;
+nav li {
+    display: block;
+    font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
-    font-weight: bold;
+    font-weight: bold; 
+    border-top: solid 0.5px #f6eee4
 }
 
-nav li a{
+nav li a {
     display: block;
-    text-decoration-color: #f6eee4;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 2em;
-    padding-right: 2em;
+    color: #f6eee4;
+    padding: 0.5em 2em;
     text-decoration: none;
 }
 
-/* Style rules for main content*/
-main{
+/* Style rules for main content */
+
+main {
     padding: 2%;
+    font-family: "Lora", serif;
 }
 
-main p{
-    font-size: 125em;
+main p {
+    font-size: 1.25em;
 }
 
 main h3 {
@@ -100,63 +95,92 @@ main h3 {
 main ul {
     list-style-type: square;
 }
+
 .link {
-    text-decoration-color: #4d3319;
+    color: #4d3319;
     text-decoration: none;
     font-weight: bold;
     font-style: italic;
 }
+
 .action {
-    font-size: 1.75em;
+    font-size: 1.75;
     font-weight: bold;
     text-align: center;
 }
+
+.round {
+    border-radius: 6px;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
 #contact {
     text-align: center;
 }
 
+.tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 /* Style rules for main content */
-main {
+
+main{
     padding: 2%;
     font-family: Verdana, Arial, sans-serif;
 }
+
 main p {
     font-size: 1.25em;
 }
+
 main h3 {
     padding-top: 2%;
 }
+
 main ul {
     list-style-type: square;
 }
+
 .link {
-    text-decoration-color: #4d3319;
+    color: #4d3319;
     text-decoration: none;
     font-weight: bold;
     font-style: italic;
 }
+
 .action {
     font-size: 1.75em;
     font-weight: bold;
     text-align: center;
 }
+
 #contact {
     text-align: center;
 }
 
 /* Style rules for footer content */
-footer{
+
+footer {
     text-align: center;
     font-size: 0.85em;
     background-color: #2a1f14;
-    text-decoration-color: #f6eee4;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 0%;
-    padding-right: 0%;
+    color: #f6eee4;
+    padding: 1% 0%;
 }
-footer a{
-    text-decoration-color: #f3e6d8;
+
+footer a {
+    color: #f3e6d8;
     text-decoration: none;
 }

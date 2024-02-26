@@ -58,7 +58,7 @@ nav {
 }
 
 nav ul {
-    list-style-type: space-count;
+    list-style-type: none;
     text-align: center;
 }
 

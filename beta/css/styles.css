@@ -1,0 +1,127 @@
+/* 
+Author: Giovanni Cobos
+Date: February 25, 2024
+File Name: styles.css
+*/
+
+/* CSS Reset */
+
+body, header, nav, footer, ul{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body */
+
+body {
+    background-color: #ccc;
+}
+
+header {
+    width: 10%;
+    float: left;
+    margin: 0;
+}
+
+/* Style rules for nav */
+
+nav {
+    width: 90%;
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.50em;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+}
+
+/* Style Rules for the homepage */
+
+#Welcome {
+    width: 100%;
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+#Chapters {
+    text-align: center;
+}
+
+#Chapters a {
+    text-decoration: none;
+}
+
+/* Style Rules for Chapter 1 ONLY */
+
+#Chapter1 {
+    text-align: center;
+}
+
+.KeepOut {
+    width: 100%;
+}
+
+/* Style Rules for Chapter 3 ONLY */
+
+#Chapter3 {
+    text-align: center;
+}
+
+/* Styles Rules for each webpage (if applicable) */
+
+#Title {
+    display: block;
+    text-align: center;
+    color: rgb(0, 123, 255);
+}
+
+#Roadmap {
+    text-align: center;
+}
+
+#Roadmap ol {
+    text-align: center;
+}
+
+#Step1 {
+    text-align: center;
+}
+
+#Step2 {
+    text-align: center;
+}
+
+#Step3 {
+    text-align: center;
+}
+
+#Step5{
+    text-align: center;
+}
+
+#Step4 {
+    text-align: center;
+}
+
+/* Style Rules for footer */
+
+footer {
+    text-align: center;
+    color: white;
+}

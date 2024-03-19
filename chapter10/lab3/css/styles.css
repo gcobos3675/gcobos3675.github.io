@@ -1,0 +1,378 @@
+/*
+Authors: Jamal Williams, Eric Jones, Laura Smith, Sofia Perez
+Date: Current Date
+File Name: styles.css
+*/
+
+/* CSS reset */
+body, header, nav, main, footer, img, h1, h3, ul, article, section, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for images */
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background-color: royalblue;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule to hide the tablet-desk class */
+.tablet-desk, #nav-links {
+    display: none;
+}
+
+/* Style rules for header content */
+header {
+    background-image: url(/chapter10/lab3/images/hero-banner.png);
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #003e80;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;  
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding: 2%;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #fff;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #e7eaf3;
+    font-family: 'PT Sans', sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+#welcome img:first-child {
+    border: solid 1px #003e80;
+}
+
+main a {
+    color: #003e80;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main ul {
+    list-style-type: square;
+    margin-left: 12%;
+}
+
+figure {
+    text-align: center;
+}
+
+.glowtext {
+    font-size: 3em;
+    text-transform: uppercase;
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowing {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ccff, 0 0 40px #00ccff, 0 0 50px #00ccff, 0 0 60px #00ccff, 0 0 70px #00ccff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff, 0 0 60px #0000ff, 0 0 70px #0000ff, 0 0 80px #0000ff;
+  }
+}
+
+@keyframes glowing {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ccff, 0 0 40px #00ccff, 0 0 50px #00ccff, 0 0 60px #00ccff, 0 0 70px #00ccff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff, 0 0 60px #0000ff, 0 0 70px #0000ff, 0 0 80px #0000ff;
+  }
+}
+
+.clubs img {
+    box-shadow: 4px 4px 10px #003e80;
+}
+
+.events {
+    border-right: 1px solid #003e80;
+    padding: 2%;
+}
+
+.events:last-child {
+    border-right: none;
+}
+
+.action {
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #003e80;
+}
+
+.tel-link {
+    background-color: #5371a9;
+    padding: 2%;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tel-link a {
+    color: #e7eaf3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.round {
+    border-radius: 12px;
+}
+
+#clubs ul li {
+    padding-bottom: 4%;
+}
+
+/* Style rules for form elements */
+fieldset, input, select, textarea  { 
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 1%;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #5371a9;
+    font-size: 1em;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #fff;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+ 
+    /* Tablet Viewport: Show tablet-desk class, hide mobile class */
+    .tablet-desk {
+        display: block;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rule for nav area */
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    nav li {
+        padding: 2% 5%;
+        font-size: 1.5em;
+        display: inline-block;
+        font-family: Geneva, Arial, sans-serif;
+        font-weight: bold;
+    }
+    
+    nav li a {
+        display: block;
+        color: #314263;
+        text-decoration: none;
+    }
+    
+    /* Tablet Viewport: Style rules for main content */
+    .center {
+        margin: 0 auto;
+    }
+    
+    #clubs ul {
+        margin-left: 4%;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+    
+    aside {
+        grid-column: 1 / span 3;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+     /* Tablet Viewport: Style rules for table */
+    table {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+    
+    th, td {
+        border: 1px solid #000;
+        padding: 2%;
+    }
+    
+    th {
+        background-color: #5371a9;
+        color: #fff;
+        font-size: 1.15em;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ccd5e6;
+    }
+    
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 950px), print {
+    
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+    
+    nav li a {
+        padding: 0.5em 1.25em;
+    }
+    
+    nav li a:hover {
+        color: #e7eaf3;
+        background-color: #003e80;
+        opacity: 0.5;
+    }
+
+    header {
+        background-image: url(/chapter10/lab3/images/hero-banner.png);
+    }
+
+    /* Desktop Viewport: Style rules for main content */
+    main {
+        overflow: auto;
+    }
+    
+    #prog-info, #prog-meet {
+        width: 45%;
+        float: left;
+        padding: 2%;
+    }
+    
+    /* Desktop Viewport: Style rules for form elements */
+    form {
+        width: auto;
+    }
+    
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px; 
+    }
+    
+    .btn {
+        grid-column: 1 / span 3;
+    }
+    
+    /* Desktop Viewport: Style rule for footer content */
+    footer {
+        clear: left;
+    }
+    
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1441px) {
+    
+    /* Large Desktop Viewport: Style rules for body and wrapper */
+    body {
+        background: linear-gradient(#e7eaf3, #003e80);
+        background-repeat: no-repeat;
+    }
+    
+    #wrapper {
+        width: 1440px;
+        margin: 0 auto;
+    }
+    
+    /* Large Desktop Viewport: Style rule for header content */
+    header h1 {
+        color: #003e80;
+    }
+    
+    /* Large Desktop Viewport: Style rule for main content */
+    main {
+        background-color: #e7eaf3;
+    }
+    
+    section {
+        max-width: 500px;
+    }
+    
+}
+
+/* Media Query for Print */
+@media print {
+    
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    
+}

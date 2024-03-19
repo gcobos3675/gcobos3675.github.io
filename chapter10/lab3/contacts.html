@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- 
+	Group Members: Jamal Williams, Eric Jones, Laura Smith, Sofia Perez
+	File Name: contact.html
+	Today's Date: May 7, 2021
+ -->
+<html lang="en">
+<head>
+	<title>Student Happenings: Contact</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Playfair+Display:900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+<body>
+    
+    <div id="wrapper">
+
+        <header>
+            <h1>Student Happenings</h1>
+        </header>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="news.html">News</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+            <a class="nav-icon" onclick="menu()">
+                <div id="icon">&#9776;</div>
+            </a>
+		</nav> 
+
+        <nav class="tablet-desk">
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <!-- Use the main element to add main content to the webpage -->
+        <main>	
+
+            <div id="form">
+                
+                <h2>Complete the form below to receive more information about student clubs.</h2> 
+            
+                <form class="form-grid"><!-- Start Form -->
+                    
+                    <fieldset>
+                        <legend>Student Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName" required>
+
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required> 
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Club Information</legend>
+                        <p>I would like more information about:</p>
+                            
+                        <label for="art"><input type="radio" name="club" id="art" value="Art Appreciation">Art Appreciation</label>
+                        
+                        <label for="drama"><input type="radio" name="club" id="drama" value="Drama">Drama</label>
+
+                        <label for="sg"><input type="radio" name="club" id="sg" value="Student Government">Student Government</label>
+
+                        <label for="program"><input type="radio" name="club" id="program" value="Programming">Programming</label>
+                        
+                        <label for="om"><input type="radio" name="club" id="om" value="Odyssey of the Mind">Odyssey of the Mind</label>
+                        
+                        <label for="writing"><input type="radio" name="club" id="writing" value="Writing Club">Writing Club</label>
+                    </fieldset>
+                    
+                    <fieldset>
+                            <legend>Availability</legend>
+                            <label for="day">What day of the week is best for you to meet for the club you are interested in joining?</label>
+                            <select name="day" id="day">
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                            </select>
+
+                            <label for="questions">What questions do you have?</label>
+                            <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                    </fieldset>
+                    
+                    <input type="submit" id="submit" value="Submit" class="btn">
+                    
+                </form>
+            
+            </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:contact@studenthap.net">contact@studenthap.net</a></p>
+            <p><a href="https://phsc.edu/" target="_blank">Pasco-Hernando State College</a></p>
+        </footer>
+        
+    </div>
+    <script src="scripts/script.js"></script>
+	
+</body>
+</html>

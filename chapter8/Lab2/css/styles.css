@@ -6,7 +6,7 @@ File Name: styles.css
 
 /* CSS Reset */
 
-body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption {
+body, header, nav, main, footer, img, h1, h3, ul, section, aside, figure, figcaption {
     margin: 0;
     padding: 0;
     border: 0;
@@ -32,7 +32,7 @@ img {
     display: block;
 }
 
-.tab-desk, #nav-links, .desktop {
+.tab-desk, #nav-links {
     display: none;
 }
 
@@ -250,7 +250,7 @@ footer a {
 
 /* Media Query for Tablet Viewport */
 
-@media all and (min-width: 620px) {
+@media screen and (min-width: 630px), print {
     /* Tablet Viewport: Show tab-desk class, hide mobile class */
 
     .tab-desk {
@@ -303,18 +303,23 @@ footer a {
 
 /* Media Query for Large Desktop Viewports */
 
-@media (min-width: 1921px) {
+@media screen and (min-width: 1441px) {
     body {
         background: linear-gradient(#f6eee4, #78593a);
+        background-repeat: no-repeat;
     }
 
     #wrapper {
-        width: 1920px;
+        width: 1440px;
         margin: 0 auto;
     }
 
     main {
         background-color: #f6eee4;
+    }
+
+    section {
+        max-width: 500px;
     }
 }
 
@@ -338,7 +343,7 @@ footer a {
 
 /* Media Query for Desktop Viewport */
 
-@media all and (min-width: 1000px) {
+@media screen and (min-width: 950px), print {
 
     /* Desktop Viewport: Show desktop class, hide mobile class */
 
@@ -368,6 +373,10 @@ footer a {
 
     /* Desktop Viewport: Style rules for main content */
 
+    main {
+        overflow: auto;
+    }
+
     #info ul {
         margin-left: 5%;
     }
@@ -387,7 +396,7 @@ footer a {
     table {
         border: 1px solid #2a1f14;
         border-collapse: collapse;
-        margin: 0 auto
+        margin: 0 auto;
     }
 
     caption {

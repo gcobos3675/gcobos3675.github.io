@@ -32,7 +32,7 @@ img {
     display: block;
 }
 
-.tab-desk, #nav-links, .desktop {
+.tab-desk, #nav-links {
     display: none;
 }
 

@@ -1,0 +1,100 @@
+<!--
+    Giovanni Cobos:
+    File name: template.html
+    Date: April 17, 2024
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHS: Template</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+</head>
+<body>
+    <header>
+        <h1>CHS Security</h1>
+        <h3>Great Security. Greater Protection.</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="equiptment.html">Equiptment</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="getstarted.html">Get Started</a></li>
+        </ul>
+    </nav>
+    <!-- Use the main area to add the main content to the webpage -->
+    <main>
+        <div>
+            <p>Want to start securing your home? Contact us for a free consoltation!</p>
+            <p>(714) 698-4172</p>
+        </div>
+        <div id="form">
+            <h2>Complete the form below and we will contact you as early as we can!</h2>
+            <form class="form-grid">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fName">First Name: </label>
+                    <input type="text" name="fName" id="fName">
+
+                    <label for="lName">Last Name: </label>
+                    <input type="text" name="lname" id="lname">
+
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="phone">Phone: </label>
+                    <input type="tel" name="phone" id="phone">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Home Address</legend>
+                    <label for="street">Street Name: </label>
+                    <input type="text" name="street" id="street">
+
+                    <label for="number">Number (if applicable): </label>
+                    <input type="text" name="number" id="number">
+
+
+                    <label for="city">City: </label>
+                    <input type="text" name="city" id="city">
+
+                    <label for="state">State: </label>
+                    <input type="text" name="state" id="state">
+
+                    <label for="zip">ZIP code: </label>
+                    <input type="text" name="zip" id="zip">
+                </fieldset>
+                    
+                <fieldset>
+                    <legend>Please select the option you are contacting us about.</legend>
+                    <label for="installation">Installation</label>
+                    <input type="radio" name="installation" id="installation">
+
+                    <label for="service">Service</label>
+                    <input type="radio" name="service" id="service">
+
+                    <label for="consoltation">Consoltation</label>
+                    <input type="radio" name="consoltation" id="consoltation">
+
+                    <label for="other">Other (Please specify below)</label>
+                    <textarea name="other" id="other" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <input type="submit" id="submit" value="Submit" class="btn">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+        <a href="mailto:gcobos3675@student.gwinnetttech.edu">gcobos3675@student.gwinnetttech.edu</a>
+    </footer>
+</body>
+</html>
